@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neurodivergent Lens — Therapist Micro-Learning</title>
+  <meta name="description" content="Micro-learning and clinical tools for therapists developing a neurodivergent-affirming lens. Autism and ADHD as differences, not deficits." />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Favicon emoji -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-logo" href="#" onclick="navigate('home'); return false;">
+      <div class="logo-icon">🧠</div>
+      <span class="logo-text">Neurodivergent Lens</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="site-nav" id="site-nav" role="navigation">
+      <button class="nav-btn active" id="nav-home" data-page="home">Home</button>
+      <button class="nav-btn" id="nav-lessons" data-page="lessons">Lessons</button>
+      <button class="nav-btn" id="nav-drills" data-page="drills">Daily Drills</button>
+      <button class="nav-btn" id="nav-finder" data-page="finder">Intervention Finder</button>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== MAIN ===== -->
+<main class="main-content">
+
+  <!-- ==============================
+       PAGE: HOME
+       ============================== -->
+  <div class="page active" id="page-home">
+
+    <div class="hero">
+      <span class="hero-badge">Therapist Micro-Learning</span>
+      <h1>Build a Neurodivergent-Affirming Lens</h1>
+      <p class="hero-subtitle">Short lessons, scenario practice, and intervention tools for MFT interns and early-career clinicians.</p>
+      <p class="philosophy-note">Autism and ADHD are differences, not deficits.</p>
+    </div>
+
+    <div class="home-features">
+      <div class="feature-card" data-goto="lessons" role="button" tabindex="0">
+        <span class="feature-icon">📖</span>
+        <h3>Micro-Learning</h3>
+        <p>Digestible lessons on how Autism and ADHD actually show up in therapy — presentations, misdiagnoses, language, and affirming principles.</p>
+      </div>
+      <div class="feature-card" data-goto="drills" role="button" tabindex="0">
+        <span class="feature-icon">🎯</span>
+        <h3>Daily Drills</h3>
+        <p>Practice with real clinical scenarios. Choose the most affirming response, then learn why it works. Track your progress.</p>
+      </div>
+      <div class="feature-card" data-goto="finder" role="button" tabindex="0">
+        <span class="feature-icon">🔎</span>
+        <h3>Intervention Finder</h3>
+        <p>Describe what your client is experiencing and get matched to neurodivergent-affirming approaches with practical guidance on how to apply them.</p>
+      </div>
+    </div>
+
+    <div class="home-philosophy">
+      <h2>Core Principles</h2>
+      <ul>
+        <li>Your client is not broken — their brain works differently in a world built for a different kind of brain.</li>
+        <li>The goal is self-understanding, accommodation, and reduced shame — not making the client neurotypical.</li>
+        <li>Masking has a high cost. Exploring it is essential work.</li>
+        <li>Language shapes identity. Follow the client's lead — and choose words carefully.</li>
+        <li>Late diagnosis is a real clinical phenomenon, especially for women, non-binary, and BIPOC clients.</li>
+        <li>Co-occurring conditions (anxiety, depression, PTSD) are common — and shaped by the neurodivergent experience.</li>
+        <li>Special interests, hyperfocus, deep empathy, creativity — these are strengths worth naming explicitly.</li>
+      </ul>
+    </div>
+
+  </div><!-- /page-home -->
+
+  <!-- ==============================
+       PAGE: LESSONS
+       ============================== -->
+  <div class="page" id="page-lessons">
+
+    <div class="lessons-header">
+      <h2>Micro-Learning Lessons</h2>
+      <p>Short, digestible lessons on Autism, ADHD, and affirming clinical practice. Tap any lesson to expand it.</p>
+    </div>
+
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All Lessons</button>
+      <button class="filter-tab" data-filter="autism">Autism</button>
+      <button class="filter-tab" data-filter="adhd">ADHD</button>
+      <button class="filter-tab" data-filter="both">Both</button>
+      <button class="filter-tab" data-filter="language">Language</button>
+    </div>
+
+    <div class="lesson-list" id="lesson-list">
+      <!-- Rendered by JS -->
+    </div>
+
+  </div><!-- /page-lessons -->
+
+  <!-- ==============================
+       PAGE: DRILLS
+       ============================== -->
+  <div class="page" id="page-drills">
+
+    <div class="drills-header">
+      <h2>Daily Drills</h2>
+      <p>Read each client scenario and choose the most affirming, accurate clinical response. Feedback and explanation follow your selection.</p>
+    </div>
+
+    <div class="drill-progress-bar">
+      <div class="progress-track">
+        <div class="progress-fill" id="drill-progress-fill" style="width:0%"></div>
+      </div>
+      <span id="drill-progress-label">0 of 10 completed</span>
+      <span class="drill-score-badge" id="drill-score-badge">✓ 0 correct</span>
+    </div>
+
+    <div class="drill-card" id="drill-card">
+      <div class="drill-scenario-label">Client Scenario</div>
+      <div class="drill-scenario" id="drill-scenario"></div>
+      <div class="drill-question" id="drill-question"></div>
+      <div class="drill-options" id="drill-options"></div>
+      <div class="drill-feedback" id="drill-feedback"></div>
+      <div class="drill-nav">
+        <span class="drill-counter" id="drill-counter"></span>
+        <button class="btn btn-primary" id="drill-next-btn" disabled>Next Scenario →</button>
+      </div>
+    </div>
+
+  </div><!-- /page-drills -->
+
+  <!-- ==============================
+       PAGE: INTERVENTION FINDER
+       ============================== -->
+  <div class="page" id="page-finder">
+
+    <div class="finder-header">
+      <h2>Intervention Finder</h2>
+      <p>Select descriptors of what your client is experiencing. The tool will suggest neurodivergent-affirming approaches with practical guidance.</p>
+    </div>
+
+    <div class="card">
+      <div class="finder-section-label">What is your client experiencing?</div>
+      <div class="tags-grid" id="tags-grid">
+        <!-- Rendered by JS -->
+      </div>
+      <div class="finder-actions">
+        <button class="btn btn-primary" id="find-btn">Find Interventions</button>
+        <button class="btn btn-secondary" id="clear-btn">Clear All</button>
+      </div>
+    </div>
+
+    <div class="interventions-grid" id="interventions-results">
+      <div class="interventions-empty">
+        <span class="empty-icon">🔎</span>
+        <p>Select one or more descriptors above, then click <strong>Find Interventions</strong>.</p>
+      </div>
+    </div>
+
+  </div><!-- /page-finder -->
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <p><strong>Neurodivergent Lens</strong> — A micro-learning tool for therapists</p>
+  <p style="margin-top:0.4rem;">Autism and ADHD are differences, not deficits. &nbsp;·&nbsp; For educational purposes. Content reflects affirming practice principles.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,924 @@
+/* ============================================
+   Neurodivergent Lens — Therapist Micro-Learning
+   Clean, calm, accessible design
+   ============================================ */
+
+:root {
+  --bg: #f7f6f2;
+  --surface: #ffffff;
+  --surface-alt: #f0ede6;
+  --border: #e2ddd5;
+  --text-primary: #2c2a27;
+  --text-secondary: #6b6560;
+  --text-muted: #9c968f;
+  --accent: #6b8f71;        /* soft sage green */
+  --accent-light: #eaf2eb;
+  --accent-dark: #4a6e50;
+  --purple: #7c6b9e;        /* muted lavender */
+  --purple-light: #f0ecf8;
+  --teal: #5b8a8a;
+  --teal-light: #e8f4f4;
+  --warm: #c17f5c;
+  --warm-light: #fdf0e8;
+  --correct: #4a7c5a;
+  --correct-bg: #e8f5ec;
+  --incorrect: #8b4a4a;
+  --incorrect-bg: #fceaea;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 2px 12px rgba(0,0,0,0.06);
+  --shadow-hover: 0 4px 20px rgba(0,0,0,0.10);
+  --transition: 0.2s ease;
+  --max-width: 860px;
+  --font: 'Georgia', 'Times New Roman', serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* ---- Typography ---- */
+h1, h2, h3, h4 {
+  font-family: var(--font);
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.2rem; }
+
+p { margin-bottom: 0.75rem; }
+p:last-child { margin-bottom: 0; }
+
+a { color: var(--accent-dark); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---- Header / Nav ---- */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+}
+
+.header-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 60px;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, var(--accent), var(--purple));
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-family: var(--font);
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+
+.nav-btn:hover {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+}
+
+.nav-btn.active {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
+/* Mobile nav toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem;
+  color: var(--text-secondary);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+/* ---- Main Layout ---- */
+.main-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+.page {
+  display: none;
+  animation: fadeIn 0.25s ease;
+}
+
+.page.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Card ---- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+}
+
+.card + .card {
+  margin-top: 1.25rem;
+}
+
+/* ---- Page: Home ---- */
+.hero {
+  text-align: center;
+  padding: 3rem 1.5rem 2.5rem;
+  background: linear-gradient(160deg, var(--accent-light) 0%, var(--purple-light) 100%);
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+}
+
+.hero-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.8rem;
+  border-radius: 100px;
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin: 0 auto 0.5rem;
+  line-height: 1.6;
+}
+
+.philosophy-note {
+  font-size: 0.9rem;
+  color: var(--accent-dark);
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.home-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.feature-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-align: left;
+}
+
+.feature-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.feature-card h3 {
+  margin-bottom: 0.4rem;
+  color: var(--text-primary);
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+.home-philosophy {
+  background: linear-gradient(135deg, var(--accent-light), var(--teal-light));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+}
+
+.home-philosophy h2 {
+  color: var(--accent-dark);
+  margin-bottom: 1rem;
+}
+
+.home-philosophy ul {
+  list-style: none;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.home-philosophy li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.home-philosophy li::before {
+  content: '✦';
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+/* ---- Page: Lessons ---- */
+.lessons-header {
+  margin-bottom: 1.75rem;
+}
+
+.lessons-header h2 {
+  margin-bottom: 0.4rem;
+}
+
+.lessons-header p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filter-tab {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 100px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+}
+
+.filter-tab:hover {
+  border-color: var(--accent);
+  color: var(--accent-dark);
+}
+
+.filter-tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.lesson-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.lesson-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.lesson-header {
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: background var(--transition);
+}
+
+.lesson-header:hover {
+  background: var(--surface-alt);
+}
+
+.lesson-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex: 1;
+}
+
+.lesson-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tag-autism { background: var(--purple-light); color: var(--purple); }
+.tag-adhd   { background: var(--teal-light); color: var(--teal); }
+.tag-both   { background: var(--accent-light); color: var(--accent-dark); }
+.tag-language { background: var(--warm-light); color: var(--warm); }
+
+.lesson-title {
+  font-size: 1rem;
+  font-family: var(--font);
+  color: var(--text-primary);
+}
+
+.lesson-chevron {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  transition: transform var(--transition);
+  flex-shrink: 0;
+}
+
+.lesson-item.open .lesson-chevron {
+  transform: rotate(180deg);
+}
+
+.lesson-body {
+  display: none;
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.lesson-item.open .lesson-body {
+  display: block;
+}
+
+.lesson-body p {
+  margin-top: 1rem;
+  color: var(--text-primary);
+  font-size: 0.97rem;
+}
+
+.lesson-body .key-points {
+  margin-top: 1rem;
+  background: var(--surface-alt);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+}
+
+.lesson-body .key-points h4 {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.lesson-body .key-points ul {
+  list-style: none;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.lesson-body .key-points li {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lesson-body .key-points li::before {
+  content: '→';
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+/* ---- Page: Drills ---- */
+.drills-header {
+  margin-bottom: 1.75rem;
+}
+
+.drills-header h2 {
+  margin-bottom: 0.4rem;
+}
+
+.drills-header p {
+  color: var(--text-secondary);
+}
+
+.drill-progress-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.progress-track {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--purple));
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.drill-score-badge {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  padding: 0.2rem 0.7rem;
+  border-radius: 100px;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.drill-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.drill-scenario-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  margin-bottom: 0.75rem;
+}
+
+.drill-scenario {
+  font-size: 1rem;
+  color: var(--text-primary);
+  background: var(--surface-alt);
+  border-left: 3px solid var(--accent);
+  padding: 1rem 1.25rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.65;
+}
+
+.drill-question {
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 1.1rem;
+}
+
+.drill-options {
+  display: grid;
+  gap: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.drill-option {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.1rem;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  transition: all var(--transition);
+  line-height: 1.5;
+}
+
+.drill-option:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+.drill-option.selected-correct {
+  border-color: var(--correct);
+  background: var(--correct-bg);
+  color: var(--correct);
+  font-weight: 500;
+}
+
+.drill-option.selected-incorrect {
+  border-color: var(--incorrect);
+  background: var(--incorrect-bg);
+  color: var(--incorrect);
+}
+
+.drill-option.show-correct {
+  border-color: var(--correct);
+  background: var(--correct-bg);
+  color: var(--correct);
+}
+
+.drill-option:disabled {
+  cursor: default;
+}
+
+.drill-feedback {
+  display: none;
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+.drill-feedback.visible { display: block; }
+
+.drill-feedback.correct {
+  background: var(--correct-bg);
+  border: 1px solid #b8ddc3;
+  color: #2a5c38;
+}
+
+.drill-feedback.incorrect {
+  background: var(--incorrect-bg);
+  border: 1px solid #e0b8b8;
+  color: #6b2a2a;
+}
+
+.feedback-title {
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.drill-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.25rem;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: 0.93rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  transition: all var(--transition);
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--accent-dark);
+}
+
+.btn-secondary {
+  background: var(--surface);
+  color: var(--text-secondary);
+  border: 1.5px solid var(--border);
+}
+
+.btn-secondary:hover {
+  background: var(--surface-alt);
+  color: var(--text-primary);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.drill-counter {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.drill-complete {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.drill-complete .score-ring {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-light), var(--purple-light));
+  border: 3px solid var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.score-number {
+  font-family: var(--font);
+  font-size: 2rem;
+  color: var(--accent-dark);
+}
+
+.drill-complete h3 {
+  margin-bottom: 0.5rem;
+}
+
+.drill-complete p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Page: Intervention Finder ---- */
+.finder-header {
+  margin-bottom: 1.5rem;
+}
+
+.finder-header h2 {
+  margin-bottom: 0.4rem;
+}
+
+.finder-header p {
+  color: var(--text-secondary);
+}
+
+.finder-section-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.tags-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 1.75rem;
+}
+
+.tag-btn {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: 100px;
+  padding: 0.4rem 0.95rem;
+  font-size: 0.87rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.tag-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent-dark);
+  background: var(--accent-light);
+}
+
+.tag-btn.selected {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+}
+
+.tag-btn .tag-check {
+  font-size: 0.75rem;
+  display: none;
+}
+
+.tag-btn.selected .tag-check {
+  display: inline;
+}
+
+.finder-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.interventions-empty {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: var(--text-muted);
+}
+
+.interventions-empty .empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.interventions-grid {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.intervention-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  animation: fadeIn 0.25s ease;
+}
+
+.intervention-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.intervention-name {
+  font-size: 1.05rem;
+  font-family: var(--font);
+  color: var(--text-primary);
+}
+
+.intervention-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.int-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  white-space: nowrap;
+}
+
+.intervention-why {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.intervention-how {
+  background: var(--surface-alt);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.intervention-how-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.35rem;
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  text-align: center;
+  padding: 2.5rem 1.25rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  margin-top: 3rem;
+}
+
+.site-footer a { color: var(--accent-dark); }
+
+/* ---- Responsive ---- */
+@media (max-width: 640px) {
+  :root { --max-width: 100%; }
+
+  .header-inner {
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.5rem 0 0.75rem;
+    gap: 0.15rem;
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+
+  .nav-btn {
+    text-align: left;
+    padding: 0.65rem 0.85rem;
+  }
+
+  .hero h1 { font-size: 1.65rem; }
+  .hero { padding: 2rem 1.25rem 1.75rem; }
+
+  .home-features {
+    grid-template-columns: 1fr;
+  }
+
+  .drill-card { padding: 1.25rem; }
+  .lesson-body { padding: 0 1rem 1.25rem; }
+  .lesson-header { padding: 1rem; }
+}
