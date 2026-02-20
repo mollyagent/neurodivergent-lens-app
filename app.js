@@ -155,6 +155,23 @@ const LESSONS = [
       "Stimming and special interests are not pathological — don't treat them as such",
       "Know your limits; refer to specialists when needed"
     ]
+  },
+  {
+    id: 10,
+    tag: "both",
+    tagLabel: "Autism & ADHD",
+    title: "ACT with Neurodivergent Clients",
+    body: [
+      `ACT pairs well with ND-affirming work; it focuses on relating differently to thoughts and feelings, using values and committed action beyond masking-driven "shoulds."`,
+      `Adapt ACT for ND clients: (1) Values beyond masking "shoulds"; (2) Tiny EF-friendly committed actions; (3) Defusion for shame narratives ("I'm broken") separating thoughts from identity; (4) Mindfulness/interoception adaptations that use concrete sensory anchors instead of abstract scans; (5) Self-as-context that normalizes multiple selves (masking/tired) without pathologizing.`
+    ],
+    keyPoints: [
+      "Use values to replace masking-driven 'shoulds' with client-chosen 'want to's",
+      "Defusion for shame (thoughts ≠ truths)",
+      "Committed action must be tiny and EF-friendly (chunked, cued, scheduled)",
+      "Adapt mindfulness to sensory/interoceptive needs (visual, brief, concrete)",
+      "Self-as-context de-shames multiple selves (masking, exhausted)"
+    ]
   }
 ];
 
@@ -298,73 +315,168 @@ const INTERVENTIONS = [
     name: "Acceptance and Commitment Therapy (ACT)",
     tags: ["emotional-dysregulation", "masking-burnout", "perfectionism", "social-anxiety", "rejection-sensitive-dysphoria"],
     why: "ACT is especially effective for neurodivergent clients because it doesn't ask the brain to 'think differently' but instead works on relating differently to thoughts and feelings. It's well-suited to the shame and self-criticism common in ADHD and autism.",
-    how: "Use defusion techniques to create distance from self-critical thoughts ('I am broken') without requiring them to be replaced. Values-clarification work helps clients build a life aligned with who they actually are, rather than who they've been told to be. Acceptance of neurodivergent experience (rather than fighting it) can relieve enormous suffering."
+    how: `Blend quick read-aloud scripts with core ACT processes tailored for ND clients:
+<ul>
+  <li><strong>Defusion for shame:</strong> “I’m noticing the thought ‘I’m broken.’ Can we hold it as a thought, not a fact?”</li>
+  <li><strong>Values beyond masking:</strong> “If we set aside the ‘shoulds’ from masking, what actually matters to you this week?”</li>
+  <li><strong>Committed action:</strong> Keep steps tiny and EF-friendly (5–10 minutes, chunked, cued, reminded).</li>
+  <li><strong>Acceptance:</strong> “Your brain does this; we don’t have to fight it to still choose what matters.”</li>
+  <li><strong>Mindfulness/interoception:</strong> Use concrete sensory anchors (5–4–3–2–1 senses) over abstract scans.</li>
+</ul>
+Emphasize values-driven choices that replace masking-driven “shoulds,” defusion for shame narratives, and sensory-aware mindfulness.`,
   },
   {
     name: "Psychoeducation",
     tags: ["executive-function", "emotional-dysregulation", "time-blindness", "rejection-sensitive-dysphoria", "sensory-overwhelm", "perfectionism"],
     why: "For many neurodivergent clients, simply having accurate information about how their brain works is transformative. Years of being called lazy, disorganized, or 'too sensitive' create deep shame. Understanding the neuroscience can directly counter internalized blame.",
-    how: "Explain ADHD's impact on executive function, time perception, and emotional regulation in plain language. Explain autism's sensory processing differences and masking. Use analogies. Give clients language for their own experience. Connect them to affirming resources (books, communities). Psychoeducation is not a one-session task — weave it throughout treatment."
+    how: `Explain ADHD's impact on executive function, time perception, and emotional regulation in plain language; explain autism's sensory processing differences and masking. Use analogies and on-the-spot scripts:
+<ul>
+  <li><strong>ADHD + EF:</strong> “Planning/initiating/switching are executive functions; ADHD is an EF difference, not laziness.”</li>
+  <li><strong>Time blindness:</strong> “Your brain experiences time as now/not-now. Timers/visual clocks are aids, not crutches.”</li>
+  <li><strong>Emotional regulation:</strong> “Big/fast emotions are part of how your nervous system runs, not character flaws.”</li>
+  <li><strong>Autism + sensory:</strong> “Sensory input can register as pain; stimming is regulation.”</li>
+  <li><strong>Masking:</strong> “You’ve been performing neurotypical; it’s exhausting — nothing is wrong with you for feeling wiped out.”</li>
+</ul>
+Close with 1–2 resources (books, communities) and normalize revisiting psychoeducation often — weave it throughout treatment.`,
   },
   {
     name: "Scaffolding & Environmental Accommodations",
     tags: ["executive-function", "time-blindness", "sensory-overwhelm"],
     why: "When executive function is impaired, adding external structure compensates for what the internal system can't reliably provide. This is not a crutch — it's how the ADHD brain works best.",
-    how: "Help clients design external systems: body doubling, timers, visual schedules, phone alarms with specific prompts, chunked tasks, environmental cues. For sensory needs, help clients map their sensory environment and identify modifications (noise-canceling headphones, adjusted lighting, scheduled quiet time). Frame accommodations as assistive technology for the brain."
+    how: `Co-design one structure at a time; keep it doable and shame-free:
+      <ul>
+        <li><strong>Body doubling:</strong> "Want to stay on video while you send those two emails? I'll be silent background." Encourage co-working rooms or focus calls.</li>
+        <li><strong>External working memory:</strong> Write steps visibly: "Open laptop → open bills site → pay water bill." Use sticky notes/whiteboards, not memory.</li>
+        <li><strong>Time blindness bridges:</strong> Alarms with next-step text: "Start laundry (press start)." Pair with transition rituals (song, sensory cue).</li>
+        <li><strong>Sensory mapping:</strong> "Let's list your high-drain environments and one tweak each (earplugs, softer lighting, sunglasses, breaks)."</li>
+        <li><strong>Normalize:</strong> "These tools are assistive tech for your brain, like glasses — not proof you’re failing."</li>
+      </ul>
+      Test structures in-session when possible to reduce EF barrier at home.`,
   },
   {
     name: "Strengths Mapping",
     tags: ["masking-burnout", "perfectionism", "social-anxiety", "rejection-sensitive-dysphoria"],
     why: "Neurodivergent clients often arrive with years of deficit-focused feedback from schools, workplaces, and previous treatment. Explicitly identifying and naming strengths shifts the clinical frame and builds a more accurate, resilient self-concept.",
-    how: "Explore what the client is genuinely good at — including ADHD-related hyperfocus and creativity, or autism-related deep expertise and loyalty. Help them identify environments and roles where their traits are assets, not liabilities. Use their special interests as windows into competence and identity."
+    how: `Make it concrete and name strengths out loud:
+      <ul>
+        <li><strong>Spot the spark:</strong> "Where do you lose track of time in a good way?" Capture hyperfocus, pattern spotting, loyalty, creative problem-solving.</li>
+        <li><strong>Reframe 'too much' feedback:</strong> "That 'too intense' comment is also persistence and passion — where is that valued?"</li>
+        <li><strong>Strengths inventory with environment fit:</strong> Map traits to contexts: deep focus → research roles; directness → teams that value clarity; sensory attunement → design/QA.</li>
+        <li><strong>Script to mirror back:</strong> "I notice how your attention to detail shows up when you describe X — that's a strength, not a flaw."</li>
+        <li><strong>Link to self-advocacy:</strong> Turn strengths into ask: "Because I focus deeply, I need uninterrupted blocks."</li>
+      </ul>
+      Keep the pace gentle for clients with RSD; celebrate small, real examples instead of generic compliments.`,
   },
   {
     name: "Somatic Approaches",
     tags: ["sensory-overwhelm", "emotional-dysregulation", "masking-burnout"],
     why: "Many neurodivergent people have a complex relationship with their bodies — both due to interoception differences (difficulty sensing internal body states) and the accumulated physical cost of masking. Somatic work can rebuild the client's relationship with their own physical experience.",
-    how: "Go slowly and with the client's consent. Explore body-based awareness gently: 'Do you notice any sensations right now?' Don't assume standard body-scanning exercises will work as written — some clients find them dysregulating. Trauma-informed approaches are essential, especially given high trauma prevalence in neurodivergent populations."
+    how: `Titrate, offer choice, and respect sensory profiles:
+      <ul>
+        <li><strong>Consent micro-checks:</strong> "Would it feel okay to try a 10-second breath with eyes open, or would you prefer to keep talking?"</li>
+        <li><strong>Interoception ladder:</strong> Start with outer sensations (chair pressure, temperature) before inner sensations; avoid long body scans if overwhelming.</li>
+        <li><strong>Regulation menu:</strong> rocking, weighted item, hand on heart, temperature shifts (cold pack), paced breathing with a visual. Normalize stimming as regulation.</li>
+        <li><strong>Exit ramps:</strong> "If this gets uncomfortable, we stop immediately — you steer." Build agency to counter past coercive experiences (e.g., ABA/medical trauma).</li>
+      </ul>
+      Keep language concrete; invite movement instead of stillness if that feels safer.`,
   },
   {
     name: "Reducing Shame / Narrative Work",
     tags: ["masking-burnout", "perfectionism", "rejection-sensitive-dysphoria", "social-anxiety", "executive-function"],
     why: "Shame is often the central wound in neurodivergent presentations. Years of being different, being corrected, failing systems, and misunderstanding yourself accumulates into a profound sense of deficiency. Directly addressing shame is often the most important work.",
-    how: "Name shame clearly and without dramatizing it. Externalize: 'The shame you feel is not evidence of something broken in you — it's the result of being told for decades that your brain is wrong.' Use narrative re-authoring: help the client construct a story about themselves that is accurate, compassionate, and leaves room for their genuine strengths."
+    how: `Make shame explicit, then externalize and re-author:
+      <ul>
+        <li><strong>Name and locate:</strong> "I hear a strong shame voice saying you're 'lazy.' That voice was built by years of others misunderstanding your brain."</li>
+        <li><strong>Externalize:</strong> Write the shame script on paper, label it "old training." Invite the client to respond: "What would you like to say back?"</li>
+        <li><strong>Timeline reframe:</strong> Map life events with ND lens: "Here’s where masking started, here’s when burnout hit." Validate survival value of past strategies.</li>
+        <li><strong>Self-compassion micro-script:</strong> "My brain is wired differently; I get to support it, not punish it." Practice aloud; keep it brief for EF.</li>
+        <li><strong>RSD-friendly repair:</strong> When shame spikes after feedback, script a pause: "This hurts, and it's an old wound being poked. I'm still worthy and in-progress."</li>
+      </ul>
+      Keep tone steady, not cheerleading; repeat often.`,
   },
   {
     name: "Working with Special Interests",
     tags: ["social-anxiety", "masking-burnout", "emotional-dysregulation"],
     why: "For autistic clients especially, special interests are a source of genuine joy, mastery, and often social connection. Rather than treating them as a symptom to manage, affirming therapy uses them as therapeutic resources.",
-    how: "Ask about the client's interests with genuine curiosity. Find bridges: Can the interest illuminate something about their values or coping? Can it be used as a reward or self-regulation tool? Can it connect them to community? Treating special interests as meaningful rather than odd is itself an affirming intervention."
+    how: `Lean in; use interests as doorway and regulation tool:
+      <ul>
+        <li><strong>Open the door:</strong> "What topic lights you up right now?" Engage sincerely for a few minutes; it's trust-building.</li>
+        <li><strong>Bridge to therapy:</strong> "How does your love of trains show up in your week? Does it refill your energy or connect you to people?" Connect to values/needs.</li>
+        <li><strong>Regulation kit:</strong> Invite interest-based micro-breaks during distress (watch a short clip, hold an interest-related object).</li>
+        <li><strong>Social connection:</strong> Explore safe communities around the interest; emphasize consent and pacing to avoid overwhelm.</li>
+        <li><strong>Reframe:</strong> "This isn't 'obsessing' — it's expertise and joy. How can we protect time for it?"</li>
+      </ul>
+      Avoid shaming or time-capping reflexively; use interests collaboratively.`,
   },
   {
     name: "Emotional Regulation Skills",
     tags: ["emotional-dysregulation", "rejection-sensitive-dysphoria", "time-blindness"],
     why: "Emotional dysregulation is a core feature of both ADHD and often autism — particularly the experience of intense, fast-moving emotions that can feel overwhelming. Skills for slowing down and navigating this are genuinely helpful, as long as they're taught without shame.",
-    how: "DBT-informed skills (distress tolerance, TIPP) can work well when adapted. Add psychoeducation: explain why emotions move so fast (ADHD and the limbic system; autism and sensory/social processing). Avoid framing skill-building as 'fixing' the emotional response — frame it as adding tools to work with a brain that feels things intensely."
+    how: `Teach skills with ND-specific tweaks and scripts:
+      <ul>
+        <li><strong>Fast emotions normalizer:</strong> "Your brain's alarm goes 0→100 quickly. Skills are tools, not evidence you 'shouldn't feel.'"</li>
+        <li><strong>DBT TIPP, sensory-safe:</strong> Offer temperature shift with consent (cold pack on neck), paced breathing with a visual, isometric squeeze. Avoid breath-holding if panic-prone.</li>
+        <li><strong>RSD pause plan:</strong> "When you feel that rejection sting, text yourself: 'This is RSD; it will crest and fall.' Then do one grounding action (cold water, step outside, short movement)."</li>
+        <li><strong>Pre-planned scripts:</strong> Create a 2–3 line card: "I can pause. I can ask for clarity. I can take a 5-minute reset." Keep it visible for working-memory support.</li>
+        <li><strong>Post-episode debrief:</strong> Map triggers and body signals without blame; adjust sensory/structure ahead of high-demand events.</li>
+      </ul>
+      Practice in-session; repetition builds automaticity despite EF hurdles.`,
   },
   {
     name: "Trauma-Informed Care",
     tags: ["masking-burnout", "social-anxiety", "emotional-dysregulation", "sensory-overwhelm"],
     why: "Neurodivergent people have disproportionately high rates of trauma — from bullying, medical trauma, coercive 'therapies' (especially ABA for autistic people), and the chronic stress of navigating hostile environments. Assuming a trauma history and proceeding accordingly is sound practice.",
-    how: "Use trauma-informed principles throughout: safety, trustworthiness, choice, collaboration, empowerment, cultural sensitivity. Be especially cautious with exposure-based work until safety and alliance are well established. Ask about ABA history for autistic clients — it is experienced as traumatic by many. Recognize that 'difficult behavior' is often a trauma or stress response."
+    how: `Assume trauma is likely; prioritize safety, choice, and pacing:
+      <ul>
+        <li><strong>Direct, gentle inquiry:</strong> "Have you had therapies that felt coercive or unsafe (including ABA, school plans, medical settings)?" Validate without pathologizing.</li>
+        <li><strong>Sensory safety plan:</strong> Agree on lighting, seating, fidgets, and exit cues. "If you tap the table twice, we'll pause or step outside."</li>
+        <li><strong>Modify exposure/prolonged work:</strong> Shorten durations, add predictable scripts, allow stimming/movement, and reconfirm consent often.</li>
+        <li><strong>Double empathy lens:</strong> Frame relational ruptures as mutual misattunement, not a client deficit; repair explicitly.</li>
+        <li><strong>Empowerment micro-choices:</strong> Offer two options often (talk vs. draw; sit vs. walk) to rebuild agency eroded by past control-heavy environments.</li>
+      </ul>
+      Name that responses called "behavior" are often protective adaptations.`,
   },
   {
     name: "Collaborative Goal-Setting",
     tags: ["perfectionism", "executive-function", "masking-burnout"],
     why: "Neurodivergent clients often have a history of goals being set for them — by schools, clinicians, and families — that didn't fit their actual needs or values. Reclaiming goal-setting as a collaborative, low-shame process is itself therapeutic.",
-    how: "Make goals concrete, small, and genuinely desired by the client (not by their idea of who they 'should' be). Check in regularly and adjust without judgment. Normalize that goals can change. Celebrate small wins explicitly — many ND clients have rarely received authentic positive feedback for genuine effort."
+    how: `Goals should be client-led, tiny, and adjustable without shame:
+      <ul>
+        <li><strong>Co-create micro-goals:</strong> "What's a 10% version of this that would still feel meaningful?" (e.g., send one email, not inbox zero.)</li>
+        <li><strong>RSD-aware check-ins:</strong> Frame updates as data, not judgment: "Let's see what the experiment taught us."</li>
+        <li><strong>Visual trackers:</strong> Use simple checkboxes/whiteboard visible during session for working-memory support.</li>
+        <li><strong>Plan for variance:</strong> "On low-energy days, what's the 'minimum viable' action? On high-energy days, what's the stretch?"</li>
+        <li><strong>Celebrate effort:</strong> Name process wins: "You noticed the overwhelm early and paused — that's progress."</li>
+      </ul>
+      Explicitly invite changing or dropping goals to counter perfectionism and masking.`,
   },
   {
     name: "Social Communication Support",
     tags: ["social-anxiety", "masking-burnout"],
     why: "Autistic clients may struggle with unwritten social rules, reading non-verbal cues, or navigating social situations in a world designed by and for neurotypical people. Affirming support acknowledges the real challenges while naming that the issue is not deficiency but difference.",
-    how: "Avoid social skills training that focuses on performing neurotypicality — this reinforces masking. Instead, help clients develop self-awareness about their communication style, identify social environments that are better fits, and build skills for advocating for their communication needs ('I'd prefer you tell me directly if something's bothering you')."
+    how: `Support authentic communication, not performance:
+      <ul>
+        <li><strong>Self-mapping:</strong> "When conversation feels good, what's happening (pace, topic depth, sensory environment)?" Use this to choose contexts that fit.</li>
+        <li><strong>Direct preference scripts:</strong> Practice aloud: "I track better with direct feedback." / "Can you text me details after meetings?"</li>
+        <li><strong>Double empathy framing:</strong> "Both sides misunderstand; it's not a you-only problem." Role-play brief repairs that honor both perspectives.</li>
+        <li><strong>Consent to pause/leave:</strong> Normalize exits: "If you need a sensory break, it's okay to step out and rejoin."</li>
+        <li><strong>Community fit:</strong> Explore ND-friendly spaces (structured meetups, interest groups) rather than forcing high-noise, unstructured settings.</li>
+      </ul>
+      Skip conformity-focused drills; prioritize agency and bidirectional understanding.`,
   },
   {
     name: "Lifestyle Structure & Energy Management",
     tags: ["time-blindness", "executive-function", "masking-burnout", "sensory-overwhelm"],
     why: "Managing energy — especially for autistic clients dealing with sensory load and masking — and time for ADHD clients is a central life challenge. Helping clients design sustainable rhythms is genuinely therapeutic.",
-    how: "Help clients map their energy across a day/week. Identify high-demand activities and what recovery looks like. Explore how masking or sensory exposure depletes energy and what restores it. For ADHD, time-blocking, routine anchors, and 'transition rituals' can help bridge the gap between 'now' and 'not now' time perception."
+    how: `Design routines that respect energy, sensory load, and time blindness:
+      <ul>
+        <li><strong>Energy map:</strong> "Let's chart a typical day: where does energy crash after masking/sensory load?" Add recovery blocks intentionally.</li>
+        <li><strong>Transition rituals:</strong> Pair alarms with a 1–2 minute bridge (song, stretching, stepping outside) to move from hyperfocus to next task.</li>
+        <li><strong>Time anchoring:</strong> Use routine anchors (meal, commute) plus visual timers; avoid relying on internal sense of time.</li>
+        <li><strong>Sensory budget:</strong> For high-demand days, pre-plan regulation (earplugs, sunglasses, quiet car time) and post-event decompression.</li>
+        <li><strong>Protect joy:</strong> Schedule interest time as replenishment, not just a reward — guards against burnout.</li>
+      </ul>
+      Frame structure as energy management, not morality; adjust weekly based on data, not judgment.
   }
 ];
 
