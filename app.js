@@ -315,29 +315,30 @@ const INTERVENTIONS = [
     name: "Acceptance and Commitment Therapy (ACT)",
     tags: ["emotional-dysregulation", "masking-burnout", "perfectionism", "social-anxiety", "rejection-sensitive-dysphoria"],
     why: "ACT is especially effective for neurodivergent clients because it doesn't ask the brain to 'think differently' but instead works on relating differently to thoughts and feelings. It's well-suited to the shame and self-criticism common in ADHD and autism.",
-    how: `Blend quick read-aloud scripts with core ACT processes tailored for ND clients:
-<ul>
-  <li><strong>Defusion for shame:</strong> “I’m noticing the thought ‘I’m broken.’ Can we hold it as a thought, not a fact?”</li>
-  <li><strong>Values beyond masking:</strong> “If we set aside the ‘shoulds’ from masking, what actually matters to you this week?”</li>
-  <li><strong>Committed action:</strong> Keep steps tiny and EF-friendly (5–10 minutes, chunked, cued, reminded).</li>
-  <li><strong>Acceptance:</strong> “Your brain does this; we don’t have to fight it to still choose what matters.”</li>
-  <li><strong>Mindfulness/interoception:</strong> Use concrete sensory anchors (5–4–3–2–1 senses) over abstract scans.</li>
-</ul>
-Emphasize values-driven choices that replace masking-driven “shoulds,” defusion for shame narratives, and sensory-aware mindfulness.`,
+    how: `Use ACT micro-scripts you can read aloud:
+      <ul>
+        <li><strong>Defusion (shame stories):</strong> "Notice the story 'I'm broken' showing up. Let's place it on a leaf and watch it float by without arguing with it." Allow stimming/movement instead of stillness if that's regulating.</li>
+        <li><strong>Values as anti-masking compass:</strong> "If your value is authenticity, what does a 5% more authentic workday look like for your brain?" Emphasize congruence over performing neurotypicality.</li>
+        <li><strong>Acceptance with sensory/EF reality:</strong> "Instead of fighting time blindness, can we practice making room for the feeling of 'I'm late' without adding shame, and then choose the next doable action?" Normalize body-based signals of overwhelm.</li>
+        <li><strong>Committed action in tiny chunks:</strong> "What's the 5-minute version you can do even on low-executive-function days?" Use visual values cards and timers to support follow-through.</li>
+      </ul>
+      Adapt metaphors to sensory comfort (skip eyes-closed visualizations if dysregulating). Reinforce that the goal is living by values with this brain, not becoming neurotypical.`,
+
   },
   {
     name: "Psychoeducation",
     tags: ["executive-function", "emotional-dysregulation", "time-blindness", "rejection-sensitive-dysphoria", "sensory-overwhelm", "perfectionism"],
     why: "For many neurodivergent clients, simply having accurate information about how their brain works is transformative. Years of being called lazy, disorganized, or 'too sensitive' create deep shame. Understanding the neuroscience can directly counter internalized blame.",
-    how: `Explain ADHD's impact on executive function, time perception, and emotional regulation in plain language; explain autism's sensory processing differences and masking. Use analogies and on-the-spot scripts:
-<ul>
-  <li><strong>ADHD + EF:</strong> “Planning/initiating/switching are executive functions; ADHD is an EF difference, not laziness.”</li>
-  <li><strong>Time blindness:</strong> “Your brain experiences time as now/not-now. Timers/visual clocks are aids, not crutches.”</li>
-  <li><strong>Emotional regulation:</strong> “Big/fast emotions are part of how your nervous system runs, not character flaws.”</li>
-  <li><strong>Autism + sensory:</strong> “Sensory input can register as pain; stimming is regulation.”</li>
-  <li><strong>Masking:</strong> “You’ve been performing neurotypical; it’s exhausting — nothing is wrong with you for feeling wiped out.”</li>
-</ul>
-Close with 1–2 resources (books, communities) and normalize revisiting psychoeducation often — weave it throughout treatment.`,
+    how: `Keep it short, concrete, and affirming — use client-facing lines:
+      <ul>
+        <li><strong>ADHD time & initiation:</strong> "Your brain does 'now' and 'not now.' Timers/alarms are assistive tech, not crutches." (Analogy: external wheelchair ramp for time.)</li>
+        <li><strong>RSD:</strong> "That intense pain after perceived rejection is a known ADHD experience called RSD — nothing is 'wrong' with you."</li>
+        <li><strong>Autism sensory & masking:</strong> "Your sensory system is like running with all browser tabs open; lights/sounds hit harder. Masking is acting neurotypical to stay safe — it costs real energy."</li>
+        <li><strong>Language handoff:</strong> Offer scripts the client can use with others: "My brain needs clear, direct instructions" / "I process best with written follow-ups."</li>
+        <li><strong>Resources:</strong> Share 1–2 affirming books, ND creators, and support groups. Offer one-page summaries for EF support.</li>
+      </ul>
+      Return to psychoeducation often; repeat in multiple formats (visual, written, verbal) to reduce working-memory load.`,
+
   },
   {
     name: "Scaffolding & Environmental Accommodations",
@@ -476,7 +477,7 @@ Close with 1–2 resources (books, communities) and normalize revisiting psychoe
         <li><strong>Sensory budget:</strong> For high-demand days, pre-plan regulation (earplugs, sunglasses, quiet car time) and post-event decompression.</li>
         <li><strong>Protect joy:</strong> Schedule interest time as replenishment, not just a reward — guards against burnout.</li>
       </ul>
-      Frame structure as energy management, not morality; adjust weekly based on data, not judgment.
+      Frame structure as energy management, not morality; adjust weekly based on data, not judgment.`,
   }
 ];
 
