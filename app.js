@@ -172,6 +172,23 @@ const LESSONS = [
       "Adapt mindfulness to sensory/interoceptive needs (visual, brief, concrete)",
       "Self-as-context de-shames multiple selves (masking, exhausted)"
     ]
+  },
+  {
+    id: 11,
+    tag: "both",
+    tagLabel: "Autism & ADHD",
+    title: "Rejection Sensitive Dysphoria (RSD)",
+    body: [
+      `Rejection Sensitive Dysphoria describes the intense emotional and sometimes physical pain that can follow perceived or actual rejection. It's strongly associated with ADHD and can also appear in autistic clients. The experience isn't just "big feelings" — it can feel like a wound or shock to the system that crashes functioning.`,
+      `In therapy, RSD can look like sudden devastation or shame after small feedback, a client going silent or withdrawing, or quick anger/defensiveness to protect against hurt. Triggers often include canceled plans, constructive feedback, delayed replies, or even neutral facial expressions misread as disapproval. An affirming stance names it, normalizes the neurology, and plans for soothing and recovery rather than minimizing the pain.`
+    ],
+    keyPoints: [
+      "RSD = intense pain to perceived/actual rejection; common in ADHD, present for some autistic clients",
+      "Shows up as devastation, shame, shutdown/withdrawal, or quick anger to protect against hurt",
+      "Common triggers: cancellations, feedback, delayed replies, ambiguous silence/expressions",
+      "Clinical stance: name and normalize; separate shame story from self; co-create recovery/soothing steps",
+      "Avoid minimizing (it's not a big deal); focus on safety, regulation, and repair"
+    ]
   }
 ];
 
@@ -415,11 +432,12 @@ const INTERVENTIONS = [
     why: "Emotional dysregulation is a core feature of both ADHD and often autism — particularly the experience of intense, fast-moving emotions that can feel overwhelming. Skills for slowing down and navigating this are genuinely helpful, as long as they're taught without shame.",
     how: `Teach skills with ND-specific tweaks and scripts:
       <ul>
+        <li><strong>Name RSD aloud (read aloud):</strong> "That intense sting is likely RSD — your brain's alarm about possible rejection. Nothing is wrong with you; let's give it care."</li>
+        <li><strong>Quick RSD regulation plan:</strong> "Pause. Ground with one sensory cue (feet on floor, look around). Name the story: 'My brain says I'm being rejected.' Choose one micro-action: ask for clarity, take a 2-minute step outside, or text yourself 'this will crest and fall.'"</li>
         <li><strong>Fast emotions normalizer:</strong> "Your brain's alarm goes 0→100 quickly. Skills are tools, not evidence you 'shouldn't feel.'"</li>
-        <li><strong>DBT TIPP, sensory-safe:</strong> Offer temperature shift with consent (cold pack on neck), paced breathing with a visual, isometric squeeze. Avoid breath-holding if panic-prone.</li>
-        <li><strong>RSD pause plan:</strong> "When you feel that rejection sting, text yourself: 'This is RSD; it will crest and fall.' Then do one grounding action (cold water, step outside, short movement)."</li>
-        <li><strong>Pre-planned scripts:</strong> Create a 2–3 line card: "I can pause. I can ask for clarity. I can take a 5-minute reset." Keep it visible for working-memory support.</li>
-        <li><strong>Post-episode debrief:</strong> Map triggers and body signals without blame; adjust sensory/structure ahead of high-demand events.</li>
+        <li><strong>DBT TIPP, sensory-safe:</strong> Temperature shift with consent (cool pack), paced breathing with a visual, isometric squeeze. Skip breath-holding if panic-prone.</li>
+        <li><strong>Pre-planned scripts + recovery:</strong> 2–3 line card: "I can pause. I can ask for clarity. I can take a 5-minute reset." Debrief later: map triggers/body signals without blame and plan soothing/re-entry.</li>
+        <li><strong>Do not minimize:</strong> Validate the pain first ("This hurts and makes sense"). Offer skills as support, not to talk the feeling away.</li>
       </ul>
       Practice in-session; repetition builds automaticity despite EF hurdles.`,
   },
