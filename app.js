@@ -332,172 +332,198 @@ const INTERVENTIONS = [
     name: "Acceptance and Commitment Therapy (ACT)",
     tags: ["emotional-dysregulation", "masking-burnout", "perfectionism", "social-anxiety", "rejection-sensitive-dysphoria"],
     why: "ACT is especially effective for neurodivergent clients because it doesn't ask the brain to 'think differently' but instead works on relating differently to thoughts and feelings. It's well-suited to the shame and self-criticism common in ADHD and autism.",
-    how: `Use ACT micro-scripts you can read aloud:
-      <ul>
-        <li><strong>Defusion (shame stories):</strong> "Notice the story 'I'm broken' showing up. Let's place it on a leaf and watch it float by without arguing with it." Allow stimming/movement instead of stillness if that's regulating.</li>
-        <li><strong>Values as anti-masking compass:</strong> "If your value is authenticity, what does a 5% more authentic workday look like for your brain?" Emphasize congruence over performing neurotypicality.</li>
-        <li><strong>Acceptance with sensory/EF reality:</strong> "Instead of fighting time blindness, can we practice making room for the feeling of 'I'm late' without adding shame, and then choose the next doable action?" Normalize body-based signals of overwhelm.</li>
-        <li><strong>Committed action in tiny chunks:</strong> "What's the 5-minute version you can do even on low-executive-function days?" Use visual values cards and timers to support follow-through.</li>
-      </ul>
-      Adapt metaphors to sensory comfort (skip eyes-closed visualizations if dysregulating). Reinforce that the goal is living by values with this brain, not becoming neurotypical.`,
+    how: `<ul>
+        <li><strong>When to use:</strong> Shame spikes, masking burnout, rigid perfectionism, RSD flare, "should" versus values conflict.</li>
+        <li><strong>Step-by-step:</strong> (1) Values check-in (1–2 options only). (2) Defusion of the shame story with a concrete image (leaf, train car). (3) Acceptance move: allow the sensation/urge for 10–30 seconds while regulating. (4) Choose one 5-minute committed action with external supports (timer, body double). (5) Review as data, not judgment, at next session.</li>
+        <li><strong>ND-specific adaptations:</strong> Eyes open; offer movement/stimming during exercises; swap metaphors that fit the client’s sensory world; keep actions tiny to respect executive function limits; call out RSD explicitly when present ("your brain’s rejection alarm is loud").</li>
+        <li><strong>Common pitfalls:</strong> Long meditations that overload sensory systems; setting actions too big; using values to push neurotypical performance; skipping regulation before values work when overloaded.</li>
+        <li><strong>Clinician read-alouds:</strong><br>
+          "Notice the story that you’re broken. Let’s place it on a leaf and watch it pass while you rock or fidget if that helps."<br>
+          "If authenticity is a value, what's a 5% more authentic choice today that your brain could actually do?"<br>
+          "Your RSD alarm is blaring — can we name it, breathe with eyes open, and pick one next step once it softens?"
+        </li>
+      </ul>`,
 
   },
   {
     name: "Psychoeducation",
     tags: ["executive-function", "emotional-dysregulation", "time-blindness", "rejection-sensitive-dysphoria", "sensory-overwhelm", "perfectionism"],
     why: "For many neurodivergent clients, simply having accurate information about how their brain works is transformative. Years of being called lazy, disorganized, or 'too sensitive' create deep shame. Understanding the neuroscience can directly counter internalized blame.",
-    how: `Keep it short, concrete, and affirming — use client-facing lines:
-      <ul>
-        <li><strong>ADHD time & initiation:</strong> "Your brain does 'now' and 'not now.' Timers/alarms are assistive tech, not crutches." (Analogy: external wheelchair ramp for time.)</li>
-        <li><strong>RSD:</strong> "That intense pain after perceived rejection is a known ADHD experience called RSD — nothing is 'wrong' with you."</li>
-        <li><strong>Autism sensory & masking:</strong> "Your sensory system is like running with all browser tabs open; lights/sounds hit harder. Masking is acting neurotypical to stay safe — it costs real energy."</li>
-        <li><strong>Language handoff:</strong> Offer scripts the client can use with others: "My brain needs clear, direct instructions" / "I process best with written follow-ups."</li>
-        <li><strong>Resources:</strong> Share 1–2 affirming books, ND creators, and support groups. Offer one-page summaries for EF support.</li>
-      </ul>
-      Return to psychoeducation often; repeat in multiple formats (visual, written, verbal) to reduce working-memory load.`,
+    how: `<ul>
+        <li><strong>When to use:</strong> Early sessions, shame spikes, family/partner consults, after RSD events to normalize the neurology.</li>
+        <li><strong>Step-by-step:</strong> (1) Name the frame: "Different brain, not broken." (2) Teach one micro-concept (time blindness, sensory load, RSD) in 1–2 sentences. (3) Link it to the client’s lived example. (4) Offer a take-home line the client can reuse. (5) Repeat next week in a new format (written card, visual).</li>
+        <li><strong>ND-specific adaptations:</strong> Use visuals/whiteboard; give written follow-up for working memory; keep chunks short; emphasize that supports are assistive tech, not evidence of failure; explicitly define RSD when you mention it.</li>
+        <li><strong>Common pitfalls:</strong> Info-dumping; implying psychoeducation will "fix" the client; using pathologizing language; skipping consent with family members.</li>
+        <li><strong>Clinician read-alouds:</strong><br>
+          "ADHD does 'now' and 'not now' — timers are a ramp for time, not proof you’re lazy."<br>
+          "That sting you feel is called RSD — a known ADHD pattern where rejection hits like pain. Nothing is wrong with you."<br>
+          "Masking means performing neurotypical to stay safe. It protects, but it costs energy. We can plan for that cost."
+        </li>
+      </ul>`,
 
   },
   {
     name: "Scaffolding & Environmental Accommodations",
     tags: ["executive-function", "time-blindness", "sensory-overwhelm"],
     why: "When executive function is impaired, adding external structure compensates for what the internal system can't reliably provide. This is not a crutch — it's how the ADHD brain works best.",
-    how: `Co-design one structure at a time; keep it doable and shame-free:
-      <ul>
-        <li><strong>Body doubling:</strong> "Want to stay on video while you send those two emails? I'll be silent background." Encourage co-working rooms or focus calls.</li>
-        <li><strong>External working memory:</strong> Write steps visibly: "Open laptop → open bills site → pay water bill." Use sticky notes/whiteboards, not memory.</li>
-        <li><strong>Time blindness bridges:</strong> Alarms with next-step text: "Start laundry (press start)." Pair with transition rituals (song, sensory cue).</li>
-        <li><strong>Sensory mapping:</strong> "Let's list your high-drain environments and one tweak each (earplugs, softer lighting, sunglasses, breaks)."</li>
-        <li><strong>Normalize:</strong> "These tools are assistive tech for your brain, like glasses — not proof you’re failing."</li>
-      </ul>
-      Test structures in-session when possible to reduce EF barrier at home.`,
+    how: `<ul>
+        <li><strong>When to use:</strong> Tasks stall from EF/time blindness, forgetfulness between sessions, overwhelm in specific environments.</li>
+        <li><strong>Step-by-step:</strong> (1) Pick one friction point. (2) Break into 3–5 visible steps and post them. (3) Add external cues (alarms with next action text, visual timers). (4) Test one step in-session or via brief body doubling. (5) Adjust weekly with data, not judgment.</li>
+        <li><strong>ND-specific adaptations:</strong> Sensory map before choosing tools; pair alarms with a sensory transition (song, cold water); use body doubling or virtual co-working; frame experiments as RSD-safe ("data, not grade").</li>
+        <li><strong>Common pitfalls:</strong> Adding too many tools at once; removing supports when things improve; shaming language like "shouldn't need this."</li>
+        <li><strong>Clinician read-alouds:</strong><br>
+          "Let's write the steps where you can see them: open laptop → open bills site → pay water bill."<br>
+          "We’ll try one alarm that literally says the next move — 'start laundry, press start' — and pair it with a song you like."<br>
+          "These are ramps for your brain, not evidence of failure. We'll keep what works and ditch what doesn't."
+        </li>
+      </ul>`,
   },
   {
     name: "Strengths Mapping",
     tags: ["masking-burnout", "perfectionism", "social-anxiety", "rejection-sensitive-dysphoria"],
     why: "Neurodivergent clients often arrive with years of deficit-focused feedback from schools, workplaces, and previous treatment. Explicitly identifying and naming strengths shifts the clinical frame and builds a more accurate, resilient self-concept.",
-    how: `Make it concrete and name strengths out loud:
-      <ul>
-        <li><strong>Spot the spark:</strong> "Where do you lose track of time in a good way?" Capture hyperfocus, pattern spotting, loyalty, creative problem-solving.</li>
-        <li><strong>Reframe 'too much' feedback:</strong> "That 'too intense' comment is also persistence and passion — where is that valued?"</li>
-        <li><strong>Strengths inventory with environment fit:</strong> Map traits to contexts: deep focus → research roles; directness → teams that value clarity; sensory attunement → design/QA.</li>
-        <li><strong>Script to mirror back:</strong> "I notice how your attention to detail shows up when you describe X — that's a strength, not a flaw."</li>
-        <li><strong>Link to self-advocacy:</strong> Turn strengths into ask: "Because I focus deeply, I need uninterrupted blocks."</li>
-      </ul>
-      Keep the pace gentle for clients with RSD; celebrate small, real examples instead of generic compliments.`,
+    how: `<ul>
+        <li><strong>When to use:</strong> After deficit-heavy histories, masking burnout, career/relationship decisions, post-RSD hurt from feedback.</li>
+        <li><strong>Step-by-step:</strong> (1) Identify sparks (hyperfocus, patterning, honesty, empathy). (2) Pair each with contexts where it shines. (3) Reframe "too much" feedback into strength-plus-fit conversation. (4) Turn strengths into advocacy statements. (5) Capture 3 evidence examples the client can reread.</li>
+        <li><strong>ND-specific adaptations:</strong> Go slow to avoid RSD backlash; allow stimming/objects during positive focus; use visuals/whiteboard; include special interests as strengths, not rewards.</li>
+        <li><strong>Common pitfalls:</strong> Generic compliments; forced silver linings on real harm; ignoring fatigue/burnout while naming strengths.</li>
+        <li><strong>Clinician read-alouds:</strong><br>
+          "When you dive into that topic for hours, that’s deep focus — let's list where that’s valued."<br>
+          "They called you 'too intense'; I see persistence and passion. Where could that be welcomed?"<br>
+          "Because you notice tiny inconsistencies, a reasonable ask is: 'Please send details in writing so I can track them.'"
+        </li>
+      </ul>`,
   },
   {
     name: "Somatic Approaches",
     tags: ["sensory-overwhelm", "emotional-dysregulation", "masking-burnout"],
     why: "Many neurodivergent people have a complex relationship with their bodies — both due to interoception differences (difficulty sensing internal body states) and the accumulated physical cost of masking. Somatic work can rebuild the client's relationship with their own physical experience.",
-    how: `Titrate, offer choice, and respect sensory profiles:
-      <ul>
-        <li><strong>Consent micro-checks:</strong> "Would it feel okay to try a 10-second breath with eyes open, or would you prefer to keep talking?"</li>
-        <li><strong>Interoception ladder:</strong> Start with outer sensations (chair pressure, temperature) before inner sensations; avoid long body scans if overwhelming.</li>
-        <li><strong>Regulation menu:</strong> rocking, weighted item, hand on heart, temperature shifts (cold pack), paced breathing with a visual. Normalize stimming as regulation.</li>
-        <li><strong>Exit ramps:</strong> "If this gets uncomfortable, we stop immediately — you steer." Build agency to counter past coercive experiences (e.g., ABA/medical trauma).</li>
-      </ul>
-      Keep language concrete; invite movement instead of stillness if that feels safer.`,
+    how: `<ul>
+        <li><strong>When to use:</strong> Dissociation, shutdown/overwhelm, masking fatigue, RSD crash, difficulty naming sensations.</li>
+        <li><strong>Step-by-step:</strong> (1) Safety/consent check with options. (2) Start with outer sensations (chair, temperature, feet) before inner. (3) Offer 2–3 regulation tools (rocking, weighted item, paced breathing with visual). (4) Dose for 30–60 seconds, then check impact. (5) Close with client choice (stop/continue/shift topics).</li>
+        <li><strong>ND-specific adaptations:</strong> Eyes open; allow movement/stimming instead of stillness; avoid long body scans; tailor to sensory profile (sound vs. touch vs. temperature); validate medical/ABA trauma history.</li>
+        <li><strong>Common pitfalls:</strong> Forcing stillness or eye closure; using touch without explicit consent; assuming flat affect means dysregulation; going too long.</li>
+        <li><strong>Clinician read-alouds:</strong><br>
+          "Want to try a 30-second feet-on-floor check with eyes open, or would you rather keep talking?"<br>
+          "You can rock or fidget while we breathe — movement is welcome."<br>
+          "If this feels off at any moment, say 'pause' and we stop. You steer." 
+        </li>
+      </ul>`,
   },
   {
     name: "Reducing Shame / Narrative Work",
     tags: ["masking-burnout", "perfectionism", "rejection-sensitive-dysphoria", "social-anxiety", "executive-function"],
     why: "Shame is often the central wound in neurodivergent presentations. Years of being different, being corrected, failing systems, and misunderstanding yourself accumulates into a profound sense of deficiency. Directly addressing shame is often the most important work.",
-    how: `Make shame explicit, then externalize and re-author:
-      <ul>
-        <li><strong>Name and locate:</strong> "I hear a strong shame voice saying you're 'lazy.' That voice was built by years of others misunderstanding your brain."</li>
-        <li><strong>Externalize:</strong> Write the shame script on paper, label it "old training." Invite the client to respond: "What would you like to say back?"</li>
-        <li><strong>Timeline reframe:</strong> Map life events with ND lens: "Here’s where masking started, here’s when burnout hit." Validate survival value of past strategies.</li>
-        <li><strong>Self-compassion micro-script:</strong> "My brain is wired differently; I get to support it, not punish it." Practice aloud; keep it brief for EF.</li>
-        <li><strong>RSD-friendly repair:</strong> When shame spikes after feedback, script a pause: "This hurts, and it's an old wound being poked. I'm still worthy and in-progress."</li>
-      </ul>
-      Keep tone steady, not cheerleading; repeat often.`,
+    how: `<ul>
+        <li><strong>When to use:</strong> Self-blame scripts ("lazy," "too much"), post-RSD episodes, perfectionism/procrastination loops.</li>
+        <li><strong>Step-by-step:</strong> (1) Name the shame voice explicitly. (2) Externalize it on paper/whiteboard as "old training." (3) Map origins on a brief timeline (masking start, burnout, key feedback). (4) Co-write one compassionate rebuttal line. (5) Rehearse it aloud and store visibly for low-EF days.</li>
+        <li><strong>ND-specific adaptations:</strong> Use short phrases; visual aids; allow movement while talking; don't assume tears = distress; include masking fatigue and RSD language when relevant.</li>
+        <li><strong>Common pitfalls:</strong> Debating the shame voice logically; toxic positivity; overwhelming with homework; ignoring the protective function of masking.</li>
+        <li><strong>Clinician read-alouds:</strong><br>
+          "I hear a shame voice trained by years of being misunderstood — it says 'lazy.' Let's write it down and label it 'old training.'"<br>
+          "Your brain’s rejection alarm just fired; it makes sense this hurts. What do you want to say back to that old script?"<br>
+          "New line to practice: 'My brain is wired differently; I get to support it, not punish it.'"
+        </li>
+      </ul>`,
   },
   {
     name: "Working with Special Interests",
     tags: ["social-anxiety", "masking-burnout", "emotional-dysregulation"],
     why: "For autistic clients especially, special interests are a source of genuine joy, mastery, and often social connection. Rather than treating them as a symptom to manage, affirming therapy uses them as therapeutic resources.",
-    how: `Lean in; use interests as doorway and regulation tool:
-      <ul>
-        <li><strong>Open the door:</strong> "What topic lights you up right now?" Engage sincerely for a few minutes; it's trust-building.</li>
-        <li><strong>Bridge to therapy:</strong> "How does your love of trains show up in your week? Does it refill your energy or connect you to people?" Connect to values/needs.</li>
-        <li><strong>Regulation kit:</strong> Invite interest-based micro-breaks during distress (watch a short clip, hold an interest-related object).</li>
-        <li><strong>Social connection:</strong> Explore safe communities around the interest; emphasize consent and pacing to avoid overwhelm.</li>
-        <li><strong>Reframe:</strong> "This isn't 'obsessing' — it's expertise and joy. How can we protect time for it?"</li>
-      </ul>
-      Avoid shaming or time-capping reflexively; use interests collaboratively.`,
+    how: `<ul>
+        <li><strong>When to use:</strong> Building rapport, regulation needs, motivation slumps, social connection goals, post-RSD withdrawal.</li>
+        <li><strong>Step-by-step:</strong> (1) Invite a share (2–3 minutes). (2) Reflect genuine interest. (3) Bridge with a question about energy/connection. (4) Integrate as regulation (object, short clip, drawing) when distressed. (5) If desired, map safe communities or outlets.</li>
+        <li><strong>ND-specific adaptations:</strong> Protect time for interest without framing as reward; avoid pathologizing depth; use interest objects in-session for grounding; check sensory/social capacity before suggesting groups.</li>
+        <li><strong>Common pitfalls:</strong> Redirecting too quickly; treating the interest as avoidance; exposing clients to noisy/unsafe communities; using it only as a carrot.</li>
+        <li><strong>Clinician read-alouds:</strong><br>
+          "What’s lighting you up lately? Teach me for two minutes."<br>
+          "How does that refill you or connect you? Let's plan intentional time for it."<br>
+          "When RSD hits, holding something from this interest or a 2-minute video can be a reset — want to try that plan?"
+        </li>
+      </ul>`,
   },
   {
     name: "Emotional Regulation Skills",
     tags: ["emotional-dysregulation", "rejection-sensitive-dysphoria", "time-blindness"],
     why: "Emotional dysregulation is a core feature of both ADHD and often autism — particularly the experience of intense, fast-moving emotions that can feel overwhelming. Skills for slowing down and navigating this are genuinely helpful, as long as they're taught without shame.",
-    how: `Teach skills with ND-specific tweaks and scripts:
-      <ul>
-        <li><strong>Name RSD aloud (read aloud):</strong> "That intense sting is likely RSD — your brain's alarm about possible rejection. Nothing is wrong with you; let's give it care."</li>
-        <li><strong>Quick RSD regulation plan:</strong> "Pause. Ground with one sensory cue (feet on floor, look around). Name the story: 'My brain says I'm being rejected.' Choose one micro-action: ask for clarity, take a 2-minute step outside, or text yourself 'this will crest and fall.'"</li>
-        <li><strong>Fast emotions normalizer:</strong> "Your brain's alarm goes 0→100 quickly. Skills are tools, not evidence you 'shouldn't feel.'"</li>
-        <li><strong>DBT TIPP, sensory-safe:</strong> Temperature shift with consent (cool pack), paced breathing with a visual, isometric squeeze. Skip breath-holding if panic-prone.</li>
-        <li><strong>Pre-planned scripts + recovery:</strong> 2–3 line card: "I can pause. I can ask for clarity. I can take a 5-minute reset." Debrief later: map triggers/body signals without blame and plan soothing/re-entry.</li>
-        <li><strong>Do not minimize:</strong> Validate the pain first ("This hurts and makes sense"). Offer skills as support, not to talk the feeling away.</li>
-      </ul>
-      Practice in-session; repetition builds automaticity despite EF hurdles.`,
+    how: `<ul>
+        <li><strong>When to use:</strong> Fast emotions, meltdowns/shutdowns, RSD episodes, panic spikes, transition stress.</li>
+        <li><strong>Step-by-step:</strong> (1) Name the pattern ("0→100 nervous system"). (2) Build a 3-step plan: pause cue → ground with one sense → choose micro-action. (3) Practice in-session with a real or imagined trigger. (4) Preload supports (written card, alarm text). (5) Debrief after incidents: what worked, what to tweak.</li>
+        <li><strong>ND-specific adaptations:</strong> Use sensory-safe options (temperature, visual breathing guides, isometric squeezes); keep scripts short; allow movement; explicitly name RSD as a neurological alarm.</li>
+        <li><strong>Common pitfalls:</strong> Minimizing the feeling; overloading with multi-step plans; expecting recall without visual cues; insisting on eyes-closed mindfulness.</li>
+        <li><strong>Clinician read-alouds:</strong><br>
+          "That sting is likely RSD — your brain’s rejection alarm. Nothing is wrong with you; let's give it care."<br>
+          "Your plan card: Pause. Feet on floor and look around. Then choose: ask for clarity, step outside for 2 minutes, or text yourself 'this will crest and fall.'"<br>
+          "Skills are supports, not proof you shouldn't feel. We’ll practice them here so they’re easier to grab later."
+        </li>
+      </ul>`,
   },
   {
     name: "Trauma-Informed Care",
     tags: ["masking-burnout", "social-anxiety", "emotional-dysregulation", "sensory-overwhelm"],
     why: "Neurodivergent people have disproportionately high rates of trauma — from bullying, medical trauma, coercive 'therapies' (especially ABA for autistic people), and the chronic stress of navigating hostile environments. Assuming a trauma history and proceeding accordingly is sound practice.",
-    how: `Assume trauma is likely; prioritize safety, choice, and pacing:
-      <ul>
-        <li><strong>Direct, gentle inquiry:</strong> "Have you had therapies that felt coercive or unsafe (including ABA, school plans, medical settings)?" Validate without pathologizing.</li>
-        <li><strong>Sensory safety plan:</strong> Agree on lighting, seating, fidgets, and exit cues. "If you tap the table twice, we'll pause or step outside."</li>
-        <li><strong>Modify exposure/prolonged work:</strong> Shorten durations, add predictable scripts, allow stimming/movement, and reconfirm consent often.</li>
-        <li><strong>Double empathy lens:</strong> Frame relational ruptures as mutual misattunement, not a client deficit; repair explicitly.</li>
-        <li><strong>Empowerment micro-choices:</strong> Offer two options often (talk vs. draw; sit vs. walk) to rebuild agency eroded by past control-heavy environments.</li>
-      </ul>
-      Name that responses called "behavior" are often protective adaptations.`,
+    how: `<ul>
+        <li><strong>When to use:</strong> History of coercive therapy/medical trauma, high startle/shutdown, strong masking in session, client reports feeling controlled.</li>
+        <li><strong>Step-by-step:</strong> (1) Collaborative safety agreements (sensory, exits, check-in signals). (2) Gentle history-taking with consent about past harms (including ABA/school discipline). (3) Adapt exposures/processing: shorter doses, predictable scripts, movement allowed. (4) Build repair rituals for misattunement. (5) Revisit consent each session.</li>
+        <li><strong>ND-specific adaptations:</strong> Sensory plan before content; allow written/asynchronous processing; emphasize double-empathy (mismatch is mutual); offer movement/fidgets; avoid surprises.</li>
+        <li><strong>Common pitfalls:</strong> Forcing eye contact; equating compliance with safety; pushing pace; interpreting withdrawal as opposition instead of protection.</li>
+        <li><strong>Clinician read-alouds:</strong><br>
+          "If you tap twice or look toward the door, we'll pause — you don't have to explain."<br>
+          "Have there been therapies or school plans that felt coercive? We can avoid repeating that."<br>
+          "We’ll do this in short, predictable slices. Movement and stimming are welcome while we work."
+        </li>
+      </ul>`,
   },
   {
     name: "Collaborative Goal-Setting",
     tags: ["perfectionism", "executive-function", "masking-burnout"],
     why: "Neurodivergent clients often have a history of goals being set for them — by schools, clinicians, and families — that didn't fit their actual needs or values. Reclaiming goal-setting as a collaborative, low-shame process is itself therapeutic.",
-    how: `Goals should be client-led, tiny, and adjustable without shame:
-      <ul>
-        <li><strong>Co-create micro-goals:</strong> "What's a 10% version of this that would still feel meaningful?" (e.g., send one email, not inbox zero.)</li>
-        <li><strong>RSD-aware check-ins:</strong> Frame updates as data, not judgment: "Let's see what the experiment taught us."</li>
-        <li><strong>Visual trackers:</strong> Use simple checkboxes/whiteboard visible during session for working-memory support.</li>
-        <li><strong>Plan for variance:</strong> "On low-energy days, what's the 'minimum viable' action? On high-energy days, what's the stretch?"</li>
-        <li><strong>Celebrate effort:</strong> Name process wins: "You noticed the overwhelm early and paused — that's progress."</li>
-      </ul>
-      Explicitly invite changing or dropping goals to counter perfectionism and masking.`,
+    how: `<ul>
+        <li><strong>When to use:</strong> History of imposed goals, perfectionism/paralysis, EF barriers, RSD triggered by feedback on progress.</li>
+        <li><strong>Step-by-step:</strong> (1) Anchor to a value. (2) Co-create a micro-goal (10% version). (3) Define floor/ceiling (minimum viable vs. stretch). (4) Add supports (visual tracker, alarm, body double). (5) Review as data, invite edits or drops without shame.</li>
+        <li><strong>ND-specific adaptations:</strong> Keep goals observable and small; show them visually; pre-negotiate that changes are expected; script RSD-safe check-ins ("data, not grade").</li>
+        <li><strong>Common pitfalls:</strong> SMART goals without supports; framing as compliance; stacking multiple goals; treating changes as failure.</li>
+        <li><strong>Clinician read-alouds:</strong><br>
+          "What's the 10% version that still matters?"<br>
+          "On low days, the floor is 'send one reply.' On high days, the stretch is 'clear three.' Both are wins."<br>
+          "Next check-in is just data — if the plan didn't fit your brain, we’ll reshape it."
+        </li>
+      </ul>`,
   },
   {
     name: "Social Communication Support",
     tags: ["social-anxiety", "masking-burnout"],
     why: "Autistic clients may struggle with unwritten social rules, reading non-verbal cues, or navigating social situations in a world designed by and for neurotypical people. Affirming support acknowledges the real challenges while naming that the issue is not deficiency but difference.",
-    how: `Support authentic communication, not performance:
-      <ul>
-        <li><strong>Self-mapping:</strong> "When conversation feels good, what's happening (pace, topic depth, sensory environment)?" Use this to choose contexts that fit.</li>
-        <li><strong>Direct preference scripts:</strong> Practice aloud: "I track better with direct feedback." / "Can you text me details after meetings?"</li>
-        <li><strong>Double empathy framing:</strong> "Both sides misunderstand; it's not a you-only problem." Role-play brief repairs that honor both perspectives.</li>
-        <li><strong>Consent to pause/leave:</strong> Normalize exits: "If you need a sensory break, it's okay to step out and rejoin."</li>
-        <li><strong>Community fit:</strong> Explore ND-friendly spaces (structured meetups, interest groups) rather than forcing high-noise, unstructured settings.</li>
-      </ul>
-      Skip conformity-focused drills; prioritize agency and bidirectional understanding.`,
+    how: `<ul>
+        <li><strong>When to use:</strong> Confusion about social rules, masking fatigue, workplace strain, RSD from social feedback, desire for authentic connection.</li>
+        <li><strong>Step-by-step:</strong> (1) Map "good conversations" for pace, depth, environment. (2) Script preferences/asks and practice aloud. (3) Role-play repairs with double-empathy framing. (4) Plan exits/breaks for sensory overload. (5) Identify ND-friendly or structured spaces that fit.</li>
+        <li><strong>ND-specific adaptations:</strong> Normalize direct communication; allow asynchronous options (text/email) when live processing is hard; include sensory needs; call out that misunderstandings are mutual, not personal failure.</li>
+        <li><strong>Common pitfalls:</strong> Teaching conformity/social masking as the goal; forcing eye contact; ignoring cultural context; framing feedback as moral.</li>
+        <li><strong>Clinician read-alouds:</strong><br>
+          "When conversation feels good for you, what’s true about pace, topic, and environment? Let's choose spaces that match that."<br>
+          "Try this script: 'I track best with direct feedback and written follow-up — can you email the details?'"<br>
+          "If you need to step out because the room is loud, that’s regulation, not rudeness."
+        </li>
+      </ul>`,
   },
   {
     name: "Lifestyle Structure & Energy Management",
     tags: ["time-blindness", "executive-function", "masking-burnout", "sensory-overwhelm"],
     why: "Managing energy — especially for autistic clients dealing with sensory load and masking — and time for ADHD clients is a central life challenge. Helping clients design sustainable rhythms is genuinely therapeutic.",
-    how: `Design routines that respect energy, sensory load, and time blindness:
-      <ul>
-        <li><strong>Energy map:</strong> "Let's chart a typical day: where does energy crash after masking/sensory load?" Add recovery blocks intentionally.</li>
-        <li><strong>Transition rituals:</strong> Pair alarms with a 1–2 minute bridge (song, stretching, stepping outside) to move from hyperfocus to next task.</li>
-        <li><strong>Time anchoring:</strong> Use routine anchors (meal, commute) plus visual timers; avoid relying on internal sense of time.</li>
-        <li><strong>Sensory budget:</strong> For high-demand days, pre-plan regulation (earplugs, sunglasses, quiet car time) and post-event decompression.</li>
-        <li><strong>Protect joy:</strong> Schedule interest time as replenishment, not just a reward — guards against burnout.</li>
-      </ul>
-      Frame structure as energy management, not morality; adjust weekly based on data, not judgment.`,
+    how: `<ul>
+        <li><strong>When to use:</strong> Chronic burnout, frequent crashes after masking, time blindness disrupts routines, sensory overload days.</li>
+        <li><strong>Step-by-step:</strong> (1) Map a typical week with energy highs/lows and sensory drains. (2) Set 3–4 daily anchors (meals, commute) plus visual timers. (3) Pre-plan buffers and decompression after high-demand events. (4) Add transition rituals between tasks (song, stretch, step outside). (5) Review weekly; adjust without shame.</li>
+        <li><strong>ND-specific adaptations:</strong> Treat rest as non-negotiable; use alarms with action text; schedule interest time as fuel; create sensory budgets (earplugs, sunglasses, quiet car time); name that plan changes are not failure (RSD safety).</li>
+        <li><strong>Common pitfalls:</strong> Over-structuring and then abandoning; relying on willpower/time sense; removing joy time; judging plan changes.</li>
+        <li><strong>Clinician read-alouds:</strong><br>
+          "Let's mark the parts of your week that drain you and put recovery blocks right after."<br>
+          "Alarms get an action verb: 'stand, stretch, water.' They’re reminders, not scolds."<br>
+          "If Tuesday's plan blows up, that’s data — we adjust, not judge."
+        </li>
+      </ul>`,
   }
 ];
+
 
 // ---- DESCRIPTOR TAGS ----
 const DESCRIPTOR_TAGS = [
@@ -506,10 +532,12 @@ const DESCRIPTOR_TAGS = [
   { id: "emotional-dysregulation", label: "Emotional dysregulation" },
   { id: "masking-burnout", label: "Masking / burnout" },
   { id: "social-anxiety", label: "Social anxiety" },
-  { id: "rejection-sensitive-dysphoria", label: "Rejection sensitive dysphoria" },
+  { id: "rejection-sensitive-dysphoria", label: "Rejection sensitive dysphoria (RSD = intense pain to perceived/actual rejection)" },
   { id: "perfectionism", label: "Perfectionism / shame" },
   { id: "time-blindness", label: "Time blindness" }
 ];
+
+
 
 // ---- APP STATE ----
 const state = {
@@ -807,6 +835,10 @@ function findInterventions() {
       return tagObj ? tagObj.label : t;
     });
 
+    const rsdNote = inv.tags.includes('rejection-sensitive-dysphoria')
+      ? `<div class="rsd-note">RSD = intense pain to perceived or actual rejection; common in ADHD and present for some autistic clients.</div>`
+      : '';
+
     const card = document.createElement('div');
     card.className = 'intervention-card';
     card.innerHTML = `
@@ -815,6 +847,7 @@ function findInterventions() {
         <div class="intervention-tags">${matchLabels.map(l => `<span class="int-tag">${l}</span>`).join('')}</div>
       </div>
       <div class="intervention-why">${inv.why}</div>
+      ${rsdNote}
       <div class="intervention-how">
         <div class="intervention-how-label">How to apply</div>
         ${inv.how}

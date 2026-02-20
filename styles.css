@@ -850,6 +850,15 @@ a:hover { text-decoration: underline; }
   margin-bottom: 0.75rem;
 }
 
+.rsd-note {
+  background: var(--accent-light);
+  color: var(--accent-dark);
+  padding: 0.45rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.86rem;
+  margin: -0.25rem 0 0.7rem;
+}
+
 .intervention-how {
   background: var(--surface-alt);
   border-radius: var(--radius-sm);
